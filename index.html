@@ -1,0 +1,4533 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Waiting+for+the+Sunrise&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/hamburger.png" />
+
+    <title>Irani Food</title>
+  </head>
+  <body>
+    <!-- ***** header ***** -->
+
+    <header>
+      <div class="nav">
+        <div class="d-flex align-items-center">
+          <div>
+            <a href="log-in.html" class="enter1 me-sm-3 me-1">ورود </a>
+          </div>
+          <div class="me-3" style="position: relative">
+            <p href="" class="enter2">
+              <ion-icon name="cart-outline" class="enter2-icon"></ion-icon>
+              &nbsp;&nbsp;&nbsp;سبد خرید
+            </p>
+            <div class="boxes">
+              <div id="shopping-cart">
+                <table id="cart-content" class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>تصویر</th>
+                      <th>نام غذا</th>
+                      <th>قیمت</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+
+                <a href="#" id="clear-cart" class="button-cls u-full-width"
+                  >پاک کردن</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+          <div>
+            <img class="hamburger" width="100" src="img/hamburger.png" alt="" />
+          </div>
+          <div>
+            <div class="irani-food"><span>Irani</span> <span>Food</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="input-group head-search d-flex gap-2">
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            placeholder="دنبال چی می گردی ..."
+            aria-describedby="inputGroup-sizing-default"
+          />
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text search-box"
+              id="inputGroup-sizing-default"
+              >جستوجو</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="head">
+        <div>
+          <img
+            class="main-img"
+            src="img/pexels-ivan-j-long-1362044.jpg"
+            alt=""
+          />
+          <div class="img-txt">
+            <h1 class="head-txt">ایرانی فود</h1>
+            <p class="head-para">با ما بهترین غذا ها را تجربه کنید</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="all-part">
+      <!-- **** part 1 ****-->
+      <div>
+        <!-- Big screen1  -->
+        <div
+          id="carouselExample"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Pizza</span>
+              <span>پیتزا</span>
+            </div>
+
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+                <!-- nima -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/ghost.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا قارچ گوشت
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , 100 گرم گوشت گوساله
+                        چرخ کرده , قارچ , گوجه نگینی , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="1"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        240,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/fila.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا فیلا دلفیا استیک
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample1"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متر , 150 گرم گوشت گوساله
+                        خرد شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="2"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        265,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/pirshki.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا پیراشکی
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , 50 گرم مرغ تفت داده
+                        شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="3"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        183,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 4  -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/panir.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا پنیر و قارچ
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample4"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , پنیر پیتزا مخصوص, 4
+                        اسلایس پنیر گودا , فلفل دلمه ای , قارچ , سس یک نفره
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="4"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        180,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/roastbeef.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا رست بیف
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample5"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , 100 گرم گوشت گوساله
+                        ریش شده , قارچ , فلفل دلمه ای , زیتون سیاه , پنیر پیتزا
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="5"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        347,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/double.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      پیتزا دبل استاف
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample6"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , مرغ تفت داده شده ,
+                        ذرت قارچ , فلفل دلمه ای , 8 تکه هات داگ , پنیر پیتزا
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="6"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        258,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/pasto.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پیتزا پستو</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample7"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample7">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , ژامبون سالامی 80% ,
+                        سس مخصوص پستو , فلفل دلمه ای , پنیر پیتزا
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="7"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        305,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/pep.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پیتزا پپرونی</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample8"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample8">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , ژامبون پپرونی 80% ,
+                        فلفل دلمه ای , فلفل , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="8"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        210,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- meduim screen1  -->
+
+        <div
+          id="carouselExample3"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-none d-sm-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Pizza</span>
+              <span>پیتزا</span>
+            </div>
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/ghost.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">قارچ گوشت</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , 100 گرم گوشت گوساله
+                        چرخ کرده , قارچ , گوجه نگینی , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        240,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="1"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/fila.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      فیلا دلفیا استیک
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample1"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متر , 150 گرم گوشت گوساله
+                        خرد شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        265,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="2"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/pirshki.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پیراشکی</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , 50 گرم مرغ تفت داده
+                        شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        183,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="3"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/pasto.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پستو</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample7"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample7">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , ژامبون سالامی 80% ,
+                        سس مخصوص پستو , فلفل دلمه ای , پنیر پیتزا
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        305,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="7"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/roastbeef.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      رست بیف ایتالیایی
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample6"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , مرغ تفت داده شده ,
+                        ذرت قارچ , فلفل دلمه ای , 8 تکه هات داگ , پنیر پیتزا
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        347,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="5"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/double.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">دبل استاف</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample9"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample9">
+                      <div class="card-body">
+                        خمیر پیتزا ایتالیایی 30 سانتی متری , مرغ تفت داده شده ,
+                        ذرت قارچ , فلفل دلمه ای , 8 تکه هات داگ , پنیر پیتزا
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        258,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="6"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page 3 -->
+
+            <div class="carousel-item">
+              <div class="cards-wrapper aa">
+                <!-- Card 1  -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/panir.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پنیر و قارچ</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample4"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , پنیر پیتزا مخصوص, 4
+                        اسلایس پنیر گودا , فلفل دلمه ای , قارچ , سس یک نفره
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        180,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="4"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/pep.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پپرونی</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample8"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample8">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , ژامبون پپرونی 80% ,
+                        فلفل دلمه ای , فلفل , پنیر پیتزا , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        210,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="8"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3  hidden-->
+
+                <div class="card card--visibility">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/panir.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"></h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample4"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card-body">
+                        خمیر پیتزا آمریکایی 22 سانتی متری , پنیر پیتزا مخصوص, 4
+                        اسلایس پنیر گودا , فلفل دلمه ای , قارچ , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        180,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="9"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- small screen1  -->
+        <div
+          id="carouselExampleControlSmallScreen"
+          class="carousel carousel-dark slide d-sm-none small-card-body"
+        >
+          <div class="carousel-inner">
+            <div class="small-card-top-title text-center pb-2">
+              <span class="eng-pizza">Pizza</span>
+              <span>پیتزا</span>
+            </div>
+            <!-- Card 1 -->
+            <div class="carousel-item active">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/ghost.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">قارچ گوشت</h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample2"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card-body">
+                      خمیر پیتزا آمریکایی 22 سانتی متری , 100 گرم گوشت گوساله
+                      چرخ کرده , قارچ , گوجه نگینی , پنیر پیتزا , سس یک نفره
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="1"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      240,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/fila.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    پیتزا فیلا دلفیا استیک
+                  </h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample1">
+                    <div class="card-body">
+                      خمیر پیتزا آمریکایی 22 سانتی متر , 150 گرم گوشت گوساله خرد
+                      شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="2"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      265,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/pirshki.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">پیتزا پیراشکی</h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card-body">
+                      خمیر پیتزا آمریکایی 22 سانتی متری , 50 گرم مرغ تفت داده
+                      شده , قارچ , فلفل دلمه ای , پنیر پیتزا , سس یک نفره
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="3"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      183,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/panir.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    پیتزا پنیر و قارچ
+                  </h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample4"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample4">
+                    <div class="card-body">
+                      خمیر پیتزا آمریکایی 22 سانتی متری , پنیر پیتزا مخصوص, 4
+                      اسلایس پنیر گودا , فلفل دلمه ای , قارچ , سس یک نفره
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="4"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      180,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/roastbeef.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">پیتزا رست بیف</h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample5"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample5">
+                    <div class="card-body">
+                      خمیر پیتزا ایتالیایی 30 سانتی متری , 100 گرم گوشت گوساله
+                      ریش شده , قارچ , فلفل دلمه ای , زیتون سیاه , پنیر پیتزا
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="5"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      347,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/double.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    پیتزا دبل استاف
+                  </h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample6"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample6">
+                    <div class="card-body">
+                      خمیر پیتزا ایتالیایی 30 سانتی متری , مرغ تفت داده شده ,
+                      ذرت قارچ , فلفل دلمه ای , 8 تکه هات داگ , پنیر پیتزا
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="6"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      258,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/pasto.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">پیتزا پستو</h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample7"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample7">
+                    <div class="card-body">
+                      خمیر پیتزا ایتالیایی 30 سانتی متری , ژامبون سالامی 80% ,
+                      سس مخصوص پستو , فلفل دلمه ای , پنیر پیتزا
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="7"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      305,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/pep.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">پیتزا پپرونی</h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample8"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample8">
+                    <div class="card-body">
+                      خمیر پیتزا آمریکایی 22 سانتی متری , ژامبون پپرونی 80% ,
+                      فلفل دلمه ای , فلفل , پنیر پیتزا , سس یک نفره
+                    </div>
+                  </div>
+
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="8"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      210,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- **** part 2 **** -->
+      <div>
+        <!-- Big screen2  -->
+        <div
+          id="carouselExample4"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Sandwich</span>
+              <span>ساندویچ</span>
+            </div>
+
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanBOLGHARI.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ ژامبون بوقلمون
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample11"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample11">
+                      <div class="card-body">
+                        4 اسلایس ژامبون بوقلمون 80% , سس مرغی , کاهو , گوجه ,
+                        نان باگت کنجد دار , فلفل , سس یک نفره مخصوص
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="11"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        195,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanROST.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ رست بیف
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample12"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample12">
+                      <div class="card-body">
+                        100 گرم گوشت گوساله ریش ریش شده , خیارشور , کاهو , گوجه
+                        , نان باگت کنجد دار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="12"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        245,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanSTEAK.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ استیک ویژه
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample13"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample13">
+                      <div class="card-body">
+                        150 گرم گوشت استیک گوساله , 3 اسلایس ژامبون گوشت 80% ,
+                        قارچ , پنیر پیتزا , نان باگت کنجد دار , سس یک نفره
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="13"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        250,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 4  -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanHOT.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ هات لاورز
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample14"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample14">
+                      <div class="card-body">
+                        130 گرم برگر گوشت 3 اسلایس ژامبون پپرونی 80% , پنیر گودا
+                        , سس سانتافه , کاهو , گوجه , خیارشور , نان مک , سس تند
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="14"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        185,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanDOG.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ هات داگ
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample15"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample15">
+                      <div class="card-body">
+                        یک عدد هات داگ تنوری شده 80% , کاهو , گوجه , خیارشور ,
+                        نان باگت کنجددار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="15"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        133,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanGOSHT.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ ژامبون گوشت
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample16"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample16">
+                      <div class="card-body">
+                        4 اسلایس ژامبون گوشت 80% , قارچ , خیارشور , کاهو , گوجه
+                        , پنیر , نان باگت کنجد دار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="16"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        175,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanFILE.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ فیله مرغ
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample18"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample18">
+                      <div class="card-body">
+                        5 تکه فیله مرغ 80 گرمی , کاهو , گوجه , سس مخصوص , 3
+                        اسلایس ژامبون مرغ , قارچ , پنیر پیتزا , نان باگت کنجد
+                        دار
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="17"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        165,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanSUPER.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ سوپریم
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample17"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample17">
+                      <div class="card-body">
+                        120 گرم فیله مرغ سوخاری اسپایسی , ژامبون بوقلمون 80% ,
+                        پنیر گودا , سس مرغی , کاهو , گوجه , نان مک
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="18"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        133,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample4"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample4"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- meduim screen2  -->
+        <div
+          id="carouselExample5"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-none d-sm-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Sandwich</span>
+              <span>ساندویچ</span>
+            </div>
+
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/sanBOLGHARI.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ ژامبون بوقلمون
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample11"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample11">
+                      <div class="card-body">
+                        4 اسلایس ژامبون بوقلمون 80% , سس مرغی , کاهو , گوجه ,
+                        نان باگت کنجد دار , فلفل , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        195,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="11"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/sanROST.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ رست بیف
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample12"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample12">
+                      <div class="card-body">
+                        100 گرم گوشت گوساله ریش ریش شده , خیارشور , کاهو , گوجه
+                        , نان باگت کنجد دار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        245,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="12"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/sanSTEAK.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ استیک ویژه
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample13"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample13">
+                      <div class="card-body">
+                        150 گرم گوشت استیک گوساله , 3 اسلایس ژامبون گوشت 80% ,
+                        قارچ , پنیر پیتزا , نان باگت کنجد دار , سس یک نفره
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        250,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="13"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanHOT.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ هات لاورز
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample14"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample14">
+                      <div class="card-body">
+                        130 گرم برگر گوشت 3 اسلایس ژامبون پپرونی 80% , پنیر گودا
+                        , سس سانتافه , کاهو , گوجه , خیارشور , نان مک , سس تند
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        185,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="14"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanDOG.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ هات داگ
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample15"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample15">
+                      <div class="card-body">
+                        یک عدد هات داگ تنوری شده 80% , کاهو , گوجه , خیارشور ,
+                        نان باگت کنجددار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        133,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="15"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanGOSHT.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ ژامبون گوشت
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample16"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample16">
+                      <div class="card-body">
+                        4 اسلایس ژامبون گوشت 80% , قارچ , خیارشور , کاهو , گوجه
+                        , پنیر , نان باگت کنجد دار , سس یک نفره مخصوص
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        175,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="16"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page 3 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper aa">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanFILE.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ فیله مرغ
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample18"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample18">
+                      <div class="card-body">
+                        5 تکه فیله مرغ 80 گرمی , کاهو , گوجه , سس مخصوص , 3
+                        اسلایس ژامبون مرغ , قارچ , پنیر پیتزا , نان باگت کنجد
+                        دار
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-12 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        165,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-12 ms-1 add-to-cart"
+                        data-id="17"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanSUPER.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ سوپریم
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample17"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample17">
+                      <div class="card-body">
+                        120 گرم فیله مرغ سوخاری اسپایسی , ژامبون بوقلمون 80% ,
+                        پنیر گودا , سس مرغی , کاهو , گوجه , نان مک
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        133,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="18"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 hidden -->
+
+                <div class="card card--visibility">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/sanFILE.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      ساندویچ فیله مرغ
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample18"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample18">
+                      <div class="card-body">
+                        5 تکه فیله مرغ 80 گرمی , کاهو , گوجه , سس مخصوص , 3
+                        اسلایس ژامبون مرغ , قارچ , پنیر پیتزا , نان باگت کنجد
+                        دار
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        165,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="19"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample5"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample5"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- small screen2  -->
+
+        <div
+          id="carouselExampleControlSmallScreen1"
+          class="carousel carousel-dark slide d-sm-none small-card-body"
+        >
+          <div class="carousel-inner">
+            <div class="small-card-top-title text-center pb-2">
+              <span class="eng-pizza">Sandwich</span>
+              <span>ساندویچ</span>
+            </div>
+            <!-- Card 1 -->
+
+            <div class="carousel-item active">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanBOLGHARI.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ ژامبون بوقلمون
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample11"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample11">
+                    <div class="card-body">
+                      4 اسلایس ژامبون بوقلمون 80% , سس مرغی , کاهو , گوجه , نان
+                      باگت کنجد دار , فلفل , سس یک نفره مخصوص
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="11"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      195,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanROST.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ رست بیف
+                  </h5>
+
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample12"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample12">
+                    <div class="card-body">
+                      100 گرم گوشت گوساله ریش ریش شده , خیارشور , کاهو , گوجه ,
+                      نان باگت کنجد دار , سس یک نفره مخصوص
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="12"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      245,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanSTEAK.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ استیک ویژه
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample13"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample13">
+                    <div class="card-body">
+                      150 گرم گوشت استیک گوساله , 3 اسلایس ژامبون گوشت 80% ,
+                      قارچ , پنیر پیتزا , نان باگت کنجد دار , سس یک نفره
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="13"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      250,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanHOT.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ هات لاورز
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample14"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample14">
+                    <div class="card-body">
+                      130 گرم برگر گوشت 3 اسلایس ژامبون پپرونی 80% , پنیر گودا ,
+                      سس سانتافه , کاهو , گوجه , خیارشور , نان مک , سس تند
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="14"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      185,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanDOG.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ هات داگ
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample15"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample15">
+                    <div class="card-body">
+                      یک عدد هات داگ تنوری شده 80% , کاهو , گوجه , خیارشور , نان
+                      باگت کنجددار , سس یک نفره مخصوص
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="15"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      133,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanGOSHT.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ ژامبون گوشت
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample16"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample16">
+                    <div class="card-body">
+                      4 اسلایس ژامبون گوشت 80% , قارچ , خیارشور , کاهو , گوجه ,
+                      پنیر , نان باگت کنجد دار , سس یک نفره مخصوص
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="16"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      175,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanFILE.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    ساندویچ فیله مرغ
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample18"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample18">
+                    <div class="card-body">
+                      5 تکه فیله مرغ 80 گرمی , کاهو , گوجه , سس مخصوص , 3 اسلایس
+                      ژامبون مرغ , قارچ , پنیر پیتزا , نان باگت کنجد دار
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="17"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      165,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/sanSUPER.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">ساندویچ سوپریم</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample17"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample17">
+                    <div class="card-body">
+                      120 گرم فیله مرغ سوخاری اسپایسی , ژامبون بوقلمون 80% ,
+                      پنیر گودا , سس مرغی , کاهو , گوجه , نان مک
+                    </div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="18"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      133,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- **** part 3 **** -->
+      <div>
+        <!-- Big screen3  -->
+        <div
+          id="carouselExample7"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Appetizer</span>
+              <span>پیش غذا</span>
+            </div>
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSIB.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      سیب زمینی سرخ شده
+                    </h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample31"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample31">
+                      <div class="card-body">150 گرم سیب زمینی سرخ کرده</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="21"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        70,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appBALL.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">بال سوخاری</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample32"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample32">
+                      <div class="card-body">6 تکه بال سوخاری</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="22"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        95,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appNUG.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">ناگت مرغ</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample33"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample33">
+                      <div class="card-body">6 عدد ناگت مرغ</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="23"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 4  -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSIR.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">نان سیر</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample134"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample134">
+                      <div class="card-body">
+                        خمیر پیتزا , سیر , کره , جعفری
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="24"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        112,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appLOGHME.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">لقمه سوخاری</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample35"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample35">
+                      <div class="card-body">6 تکه فیله مرغ سوخاری</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="25"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        97,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appGHARCH.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">قارچ سوخاری</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample36"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample36">
+                      <div class="card-body">20 عدد قارچ سوخاری</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="26"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appPIAZ.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پیاز سوخاری</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample37"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample37">
+                      <div class="card-body">6 تکه پیاز حلقه ای سوخاری</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="27"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSALAD.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">سالاد کلم</h5>
+
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample38"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample38">
+                      <div class="card-body">کلم سفید , هویج رنده شده , سس</div>
+                    </div>
+                    <div class="row">
+                      <span class="col-1"></span>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-4 ms-1 larg-row add-to-cart"
+                        data-id="28"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-6 larg-row buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        17,000 تومان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample7"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample7"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- meduim screen3  -->
+        <div
+          id="carouselExample8"
+          class="carousel slide carousel-dark mt-5 d-none d-lg-none d-sm-block"
+        >
+          <div class="carousel-inner">
+            <div class="card-top-title">
+              <span class="eng-pizza">Appetizer</span>
+              <span>پیش غذا</span>
+            </div>
+            <!-- page 1 -->
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/appSIB.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">
+                      سیب زمینی سرخ شده
+                    </h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample31"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample31">
+                      <div class="card-body">150 گرم سیب زمینی سرخ کرده</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        70,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="21"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/appBALL.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">بال سوخاری</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample32"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample32">
+                      <div class="card-body">6 تکه بال سوخاری</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        95,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="22"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="img/appNUG.jpeg" alt="..." class="" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">ناگت مرغ</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample33"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample33">
+                      <div class="card-body">6 عدد ناگت مرغ</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="23"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSIR.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">نان سیر</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample134"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample134">
+                      <div class="card-body">
+                        خمیر پیتزا , سیر , کره , جعفری
+                      </div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        112,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="24"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appLOGHME.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">لقمه سوخاری</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample35"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample35">
+                      <div class="card-body">6 تکه فیله مرغ سوخاری</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        97,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="25"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appGHARCH.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">قارچ سوخاری</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample36"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample36">
+                      <div class="card-body">20 عدد قارچ سوخاری</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="26"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page 3 -->
+            <div class="carousel-item">
+              <div class="cards-wrapper aa">
+                <!-- Card 1 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSALAD.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">سالاد کلم</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample38"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample38">
+                      <div class="card-body">کلم سفید , هویج رنده شده , سس</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        17,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="28"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appPIAZ.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">پیاز سوخاری</h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample37"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample37">
+                      <div class="card-body">6 تکه پیاز حلقه ای سوخاری</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        90,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="27"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 hidden-->
+
+                <div class="card card--visibility">
+                  <div class="image-wrapper">
+                    <img
+                      src="img/appSALAD.jpeg"
+                      width="100%"
+                      height="300px"
+                      alt="..."
+                      class=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"></h5>
+                    <p class="card-text">
+                      <a
+                        class="mohtava"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample38"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        محتویات ...
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample38">
+                      <div class="card-body">کلم سفید , هویج رنده شده , سس</div>
+                    </div>
+                    <div
+                      class="row"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 mb-2 buy"
+                        style="display: flex; justify-content: center"
+                      >
+                        17,000 تومان
+                      </a>
+                      <a
+                        href="Shop-confirem.html"
+                        class="btn btn-primary col-10 ms-1 add-to-cart"
+                        data-id="29"
+                        style="display: flex; justify-content: center"
+                        >+ سبد خرید
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample8"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample8"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- small screen3  -->
+
+        <div
+          id="carouselExampleControlSmallScreen2"
+          class="carousel carousel-dark slide d-sm-none small-card-body"
+        >
+          <div class="carousel-inner">
+            <div class="small-card-top-title text-center pb-2">
+              <span class="eng-pizza">Appetizer</span>
+              <span>پیش غذا</span>
+            </div>
+            <!-- Card 1 -->
+
+            <div class="carousel-item active">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appSIB.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    سیب زمینی سرخ شده
+                  </h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample31"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample31">
+                    <div class="card-body">150 گرم سیب زمینی سرخ کرده</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 ms-1 mb-2 add-to-cart"
+                      data-id="21"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      70,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appBALL.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">بال سوخاری</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample32"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample32">
+                    <div class="card-body">6 تکه بال سوخاری</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 ms-1 mb-2 add-to-cart"
+                      data-id="22"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      95,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appNUG.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">ناگت مرغ</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample33"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample33">
+                    <div class="card-body">6 عدد ناگت مرغ</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 ms-1 mb-2 add-to-cart"
+                      data-id="23"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      90,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appSIR.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">نان سیر</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample134"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample134">
+                    <div class="card-body">خمیر پیتزا , سیر , کره , جعفری</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="24"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      112,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appLOGHME.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">لقمه سوخاری</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample35"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample35">
+                    <div class="card-body">6 تکه فیله مرغ سوخاری</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="25"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      97,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appGHARCH.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">قارچ سوخاری</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample36"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample36">
+                    <div class="card-body">20 عدد قارچ سوخاری</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="26"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      90,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appPIAZ.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">پیاز سوخاری</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample37"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample37">
+                    <div class="card-body">6 تکه پیاز حلقه ای سوخاری</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="27"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      90,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+
+            <div class="carousel-item">
+              <div class="card margin-small-card">
+                <div class="image-wrapper">
+                  <img src="img/appSALAD.jpeg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">سالاد کلم</h5>
+                  <p class="card-text">
+                    <a
+                      class="mohtava"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample38"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      محتویات ...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample38">
+                    <div class="card-body">کلم سفید , هویج رنده شده , سس</div>
+                  </div>
+                  <div class="row me-4">
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 mb-2 ms-1 add-to-cart"
+                      data-id="28"
+                      style="display: flex; justify-content: center"
+                      >+ سبد خرید
+                    </a>
+                    <a
+                      href="Shop-confirem.html"
+                      class="btn btn-primary col-10 buy"
+                      style="display: flex; justify-content: center"
+                    >
+                      17,000 تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlSmallScreen2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid pt-5">
+        <!-- big screen -->
+        <div class="row d-sm-block d-none">
+          <div class="col-12 bg-dark text-light pt-3">
+            <div class="d-flex justify-content-around">
+              <div class="footer-us">
+                <ul class="style-type">
+                  <li>
+                    <a href="aboutus.html" class="follow-link">تماس با ما</a>
+                  </li>
+                  <li>
+                    <a href="aboutus.html" class="follow-link">درباره ما</a>
+                  </li>
+                  <li><a href="" class="follow-link">پرسش و پاسخ</a></li>
+                  <li><a href="" class="follow-link">پشتیبانی</a></li>
+                </ul>
+              </div>
+              <div class="footer-follow">
+                <ul class="style-type">
+                  <li class="mb-2" style="font-size: 20px">ما را دنبال کنید</li>
+                  <li>
+                    <a href="" class="follow-link">
+                      <ion-icon name="paper-plane-outline"></ion-icon>
+                      تلگرام
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="follow-link">
+                      <ion-icon name="logo-instagram"></ion-icon> اینستاگرام</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="follow-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                      فیسبوک
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-image">
+                <img src="img/hamburger.png" width="100" alt="" />
+                <p class="footer-image-txt">ایرانی فود</p>
+                <p class="footer--image--txt">Irani Food</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 footer-copyright" style="cursor: default">
+            حقوق سایت متعلق به ایرانی فود می باشد
+          </div>
+        </div>
+        <!-- small screen -->
+        <div class="row d-sm-none d-block">
+          <div class="col-12 bg-dark text-light pt-3">
+            <div class="row">
+              <!-- <div class=""> -->
+
+              <div class="footer-follow col-7">
+                <ul class="style-type pe-5">
+                  <li class="mb-2" style="font-size: 20px">ما را دنبال کنید</li>
+                  <li>
+                    <a href="" class="follow-link-small">
+                      <ion-icon name="paper-plane-outline"></ion-icon>
+                      تلگرام
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="follow-link-small">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      اینستاگرام</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="follow-link-small">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                      فیسبوک
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-image col-5">
+                <img src="img/hamburger.png" width="100" alt="" />
+                <p class="footer-image-txt">ایرانی فود</p>
+                <p class="footer--image--txt">Irani food</p>
+              </div>
+            </div>
+
+            <div class="footer-us-small col-12 pb-3">
+              <ul class="style-type d-flex gap-5">
+                <li>
+                  <a href="aboutus.html" class="follow-link-small"
+                    >تماس با ما</a
+                  >
+                </li>
+                <li>
+                  <a href="aboutus.html" class="follow-link-small">درباره ما</a>
+                </li>
+                <li><a href="" class="follow-link-small">پرسش پاسخ</a></li>
+                <li><a href="" class="follow-link-small">پشتیبانی</a></li>
+              </ul>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-12 footer-copyright" style="cursor: default">
+            حقوق سایت متعلق به ایرانی فود می باشد
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Java script -->
+    <script src="app.js"></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ****** icon script ****** -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

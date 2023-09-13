@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "iransans";
+  src: url(font/iransans.ttf);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(325deg, #833ab4, #fcb045, #fd1d1d);
+  font-family: iransans;
+  font-size: 1.1rem;
+  direction: rtl;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: default;
+  font-size: 18px;
+}
+
+.home:link,
+.home:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #fff;
+  position: absolute;
+  transition: all 300ms;
+  border-radius: 5px;
+  background-color: #474747;
+}
+
+.home:hover,
+.home:active {
+  box-shadow: 1px 1px 10px #ffffffc8;
+  background-color: #373737;
+}
+.inside {
+  border: 3px solid;
+  border-radius: 7px;
+  padding: 5px 60px 120px 60px;
+  background-color: #272727;
+}
